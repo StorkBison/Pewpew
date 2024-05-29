@@ -1,0 +1,88 @@
+/* #Primary
+================================================== */
+@font-face {
+  font-family: "times-new-roman";
+  src: url("../fonts/times-new-roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PressStart2P-Regular";
+  src: url("../fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "times-new-roman" !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h4,
+h6,
+.h1,
+.h2,
+.h4,
+.h6 {
+  font-family: "PressStart2P-Regular" !important;
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+h1 {
+  color: #92278b;
+}
+
+h6 {
+  color: #393da8;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.ml-custom {
+  margin-left: 2.5em;
+}
+/* #Preload
+================================================== */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+.loader.dark {
+  background-color: #0e0529;
+}
+.loader.green {
+  background-color: #fff;
+}
+.loader.blue {
+  background: linear-gradient(#2cbfc7, #46eeaa);
+}
+.loader svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.loader.blue svg path,
+.loader.blue svg rect {
+  fill: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wallet-button-nav {
+  align-self: center;
+}
